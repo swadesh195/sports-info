@@ -55,3 +55,48 @@ header{
     top: 115px;
     right: 100px;
 }
+.vartical-menu{
+    width: 312px;
+    height: 250px;
+    padding: 10px 20px;
+    background-color: #161616;
+}
+.vartical-menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.vartical-menu .custom-btn{
+    padding: 15px 40px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.vartical-menu .selected-btn{
+    color: #fff;
+    cursor: pointer;
+    background-color: #DD0000;
+}
+.blogs-area{
+    display: flex;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog{
+    width: 312px;
+    height: 362px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+.blog-detail{
+    padding: 20px 10px;
+}
+.blog-info{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) 220px;
+}
