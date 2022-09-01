@@ -81,6 +81,7 @@ header{
 }
 .blogs-area{
     display: flex;
+    margin-bottom: 30px;
 }
 .blogs{
     display: grid;
@@ -100,3 +101,32 @@ header{
     display: grid;
     grid-template-columns: repeat(1, 1fr) 220px;
 }
+footer{
+    padding: 50px 0;
+    background-color: #161616;
+}
+.logo {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.logo h2{
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.footer-menu ul{
+    display: flex;
+    justify-content: center;
+
+}
+.footer-menu ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.footer-menu li a{
+    color: #B9B9B9;
+    text-decoration: none;
+}
+
