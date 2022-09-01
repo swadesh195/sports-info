@@ -182,6 +182,18 @@ footer{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
     }
+    footer{
+        padding: 10px 0;
+    }
+    .footer-menu ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-menu ul li a{
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 15px;
+    }
 }
 
 /* ----------------------------------
