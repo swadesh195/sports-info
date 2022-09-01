@@ -9,24 +9,20 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-header{
-    margin: 50px 0;
-}
 .container{
-    width: 1321px;
+    width: 1180px;
     margin: 50px auto;
     border-radius: 30px;
 }
-.flexible-section{
+.header-area{
     color: #fff;
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 14px 40px;
     background-color: #161616;
 }
 .header-text{
-    width: 531px;
-    margin: 20px 0 110px;
+    margin: 50px 50px 110px;
 }
 .header-text h1{
     font-size: 60px;
@@ -38,14 +34,52 @@ header{
 }
 .watch-now-btn{
     color: #fff;
-    padding: 16px 25px;
+    padding: 12px 25px;
     text-decoration: none;
+    border-radius: 5px;
     background-color: #DD0000;
 }
 .header-img{
-    width: 581px;
-    margin-bottom: -37px;
+    margin-bottom: -31px ;
 }
 .header-img img{
-    width: 100%;
+    width: 90%;
+    padding: 10px;
+}
+
+/* ------------------------------------------------
+    Media Query Styles for Mobile device
+--------------------------------------------------- */
+@media only screen and (max-width: 688px) {
+    .container{
+        width: 80%;
+    }
+    .header-area{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+    .header-text h1{
+        font-size: 22px;
+    }
+    .header-text{
+        width: 100%;
+        margin: 20px 10px 30px;
+    }
+    .header-text p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .extra-text{
+        display: none;
+    }
+    .header-img{
+        margin-bottom: -31px;
+    }
+    .header-img img{
+        width: 100%;
+    }
+    .watch-now-btn{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 6px 8px ;
+    }
 }
