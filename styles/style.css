@@ -5,5 +5,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
+    margin: 0;
+    padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+header{
+    margin: 50px 0;
+}
+.container{
+    width: 1321px;
+    margin: 50px auto;
+    border-radius: 30px;
+}
+.flexible-section{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background-color: #161616;
+}
+.header-text{
+    width: 531px;
+    margin: 20px 0 110px;
+}
+.header-text h1{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.header-text p{
+    margin-bottom: 30px;
+}
+.watch-now-btn{
+    color: #fff;
+    padding: 16px 25px;
+    text-decoration: none;
+    background-color: #DD0000;
+}
+.header-img{
+    width: 581px;
+    margin-bottom: -37px;
+}
+.header-img img{
+    width: 100%;
 }
