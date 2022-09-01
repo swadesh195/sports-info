@@ -9,77 +9,49 @@ body{
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-.container{
-    width: 1180px;
-    margin: 50px auto;
-    border-radius: 30px;
+header{
+    margin: 40px;
 }
 .header-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
     color: #fff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 14px 40px;
-    background-color: #161616;
+    padding: 0 0 70px;
+    border-radius: 20px;
+    background: #161616;
+}
+.container{
+    max-width: 1321px;
+    margin: 0 auto;
 }
 .header-text{
-    margin: 50px 50px 110px;
+    width: 531px;
+    height: 424px;
 }
-.header-text h1{
+.header-text h2{
     font-size: 60px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    line-height: 80px;
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 .header-text p{
     margin-bottom: 30px;
 }
-.watch-now-btn{
+
+.watch-live-btn{
     color: #fff;
-    padding: 12px 25px;
-    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
     border-radius: 5px;
+    padding: 8px 20px;
+    border: 0;
     background-color: #DD0000;
 }
-.header-img{
-    margin-bottom: -31px ;
-}
 .header-img img{
-    width: 90%;
-    padding: 10px;
-}
-
-/* ------------------------------------------------
-    Media Query Styles for Mobile device
---------------------------------------------------- */
-@media only screen and (max-width: 688px) {
-    .container{
-        width: 80%;
-    }
-    .header-area{
-        grid-template-columns: repeat(1, 1fr);
-    }    
-    .header-text h1{
-        font-size: 22px;
-    }
-    .header-text{
-        width: 100%;
-        margin: 20px 10px 30px;
-    }
-    .header-text p{
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .extra-text{
-        display: none;
-    }
-    .header-img{
-        margin-bottom: -31px;
-    }
-    .header-img img{
-        width: 100%;
-    }
-    .watch-now-btn{
-        font-size: 16px;
-        font-weight: 400;
-        padding: 6px 8px ;
-    }
+    position: relative;
+    top: 115px;
+    right: 100px;
 }
