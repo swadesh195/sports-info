@@ -62,8 +62,8 @@ header{
         Styles for blogs
 ---------------------------------- */
 .vartical-menu{
-    width: 312px;
-    height: 250px;
+    width: 210px;
+    height: 200px;
     padding: 10px 20px;
     background-color: #161616;
     display: flex;
@@ -73,8 +73,8 @@ header{
 }
 .vartical-menu .custom-btn{
     padding: 15px 40px;
-    margin-top: 21px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
     border-radius: 10px;
 }
 .vartical-menu .selected-btn{
@@ -139,7 +139,7 @@ footer{
 }
 
 /* ----------------------------------
-    Media Query for mobile device
+    Media Query for mobile devices
 ------------------------------------- */
 @media only screen and (max-width: 688px) {
     .container{
@@ -173,10 +173,14 @@ footer{
         width: 100%;
         align-items: center;
         background-color: #fff;
+        margin-right: 0;
     }
     .vartical-menu .custom-btn{
         border: 2px solid 
         #E8E8E8;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 15px;
     }
     .blogs{
         grid-template-columns: repeat(1, 1fr);
@@ -197,29 +201,50 @@ footer{
 }
 
 /* ----------------------------------
-    Media Query for mobile device
+    Media Query for table devices
 ------------------------------------- */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
     .container{
         width: 100%;
     }
     .header-text{
         width: 316px;
         height: 276px;
+        padding-left: 76px;
+        padding-bottom: 61px;
     }
     .header-text h2{
         font-size: 40px;
         line-height: 50px;
     }
-    .header-img{
-        width: 323px;
-        height: 340px;
-    }
     .header-img img{
         width: 100%;
+        position: relative;
+        top: 77px;
+        right: 8px;
     }
-    main, footer{
+    .extra-text{
         display: none;
+    }
+    .blogs-area{
+       /* flex-direction: column; */
+    }
+    .vartical-menu{
+        margin-bottom: 30px;
+        background-color: #fff;
+        
+    }
+    .vartical-menu .custom-btn{
+        border: 2px solid #E8E8E8;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px; 
+    }
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog{
+        margin-right: 10px;
     }
 }
 
